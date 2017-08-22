@@ -1,0 +1,3 @@
+mohsin 13 16
+roshi 8 12
+sami 6 9

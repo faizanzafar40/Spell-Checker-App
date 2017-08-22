@@ -1,0 +1,70 @@
+﻿Build started 12/30/2015 9:22:04 PM.
+     1>Project "C:\Users\Sami\documents\visual studio 2013\Projects\DSA PROJECT\DSA PROJECT\DSA PROJECT.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _SCL_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Project_Source_Code.cpp
+         Project_Source_Code.cpp
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(151): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(196): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(223): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(372): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(413): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(480): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(484): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(493): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(484) : definition of 'i' ignored
+                 c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(480) : definition of 'i' used
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(495): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(484) : definition of 'i' ignored
+                 c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(480) : definition of 'i' used
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(496): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(484) : definition of 'i' ignored
+                 c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(480) : definition of 'i' used
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(502): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(484) : definition of 'i' ignored
+                 c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(480) : definition of 'i' used
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(529): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(588): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(619): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(620): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(621): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(651): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(709): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(782): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(855): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(917): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(945): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1008): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1009): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1010): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1025): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1027): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1028): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1032): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1038): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1039): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1043): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1049): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1050): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1055): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1061): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1062): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1066): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1072): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1073): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1077): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1083): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1084): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1088): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1094): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1095): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1099): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(1109): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\sami\documents\visual studio 2013\projects\dsa project\dsa project\project_source_code.cpp(258): warning C4715: 'Trie::find' : not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Sami\documents\visual studio 2013\Projects\DSA PROJECT\Debug\DSA PROJECT.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Sami\documents\visual studio 2013\Projects\DSA PROJECT\Debug\DSA PROJECT.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Sami\documents\visual studio 2013\Projects\DSA PROJECT\Debug\DSA PROJECT.lib" /MACHINE:X86 Debug\Project_Source_Code.obj
+         DSA PROJECT.vcxproj -> C:\Users\Sami\documents\visual studio 2013\Projects\DSA PROJECT\Debug\DSA PROJECT.exe
+     1>Done Building Project "C:\Users\Sami\documents\visual studio 2013\Projects\DSA PROJECT\DSA PROJECT\DSA PROJECT.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.75
