@@ -23,10 +23,23 @@ An application built in C++ which provides the user with a suitable suggestion f
 ### Spell Checker Application
 
 - The application uses Tries to store all the words from a file
+
 - Time complexity of tries is O (n*m) and it is best suited to the desired use case.
+
 - This algorithm works such that when a user enters a word, it determines  the length of that word and then extracts all the words fulfilling a certain condition from the main trie and stores them into a vector. The condition being that length must be less than and greater than that of the input word by 2.
+
 - Then the program finds the closest match available to that word available in the vector.
 
 ### Anagram Solver
 
-works on the algorithm such that when a user enter any anagram it is stored in an array. Our program then, determines the length of anagram and uses the trie to store all the words of that length and less than that length in a multimap. They key of every word in the multimap is actually the alphabetical sort of entered word. Our program then, starts matching the character of entered anagram with the keys of multimap. For example, if a word ‘bed’ is stored in a multimap then its alphabetical sort is ‘bde’. Our program compares all the characters of entered anagram with the key of this word and if all the characters of the key are present in that anagram then the word associated with this key will be returned.
+- The anagram that the user inputs is stored in an array.
+
+- The algorithm determines the length of the anagram and uses the trie to store all the words of that length and less in a multimap.
+
+- The key of each word in the multimap is actually the alphabetical sort of the input word.
+
+- The application then matches each character of the input anagram with the keys of the multimap.
+
+- For example, if the word ‘bed’ is stored in a multimap then its alphabetical sort is ‘bde’.
+
+- If all the characters of a particular key are present in the input anagram, then the word associated with this key is returned.
