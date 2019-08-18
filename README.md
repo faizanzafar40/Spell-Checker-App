@@ -2,7 +2,7 @@
 
 ## Brief Description
 
-An application built in C++ which provides the user with a suitable suggestion for a misspelled word in a custom text. It makes use of _Tries_ as the primary data structure.
+A C++ application which provides the user with a suitable suggestion for a misspelled word in a custom text. It makes use of _Tries_ as the primary data structure.
 
 ## Project Details
 
