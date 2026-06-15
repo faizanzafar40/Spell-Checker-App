@@ -1,17 +1,26 @@
-#include <iostream>
-#include <vector>
-#include <fstream>
-#include <string>
-#include <conio.h>
+// Spell Checker & Anagram Solver
+//
+// A Win32 console app I wrote for my data-structures course. It loads an
+// English word list into a trie and uses that trie to (a) suggest a
+// correction for a misspelled word and (b) solve and play games with
+// anagrams of 4, 6 and 8 letters. The dictionary and the saved high
+// scores both live under data/, resolved relative to the working
+// directory, so I run the program from the project root.
+
 #include <algorithm>
+#include <ctime>
+#include <fstream>
+#include <iostream>
 #include <map>
-#include <time.h>
-#include <windows.h>
+#include <string>
 #include <utility>
+#include <vector>
+
+#include <windows.h>
 
 using namespace std;
 
-//changes the text colour of console screen
+// I switch the console foreground to a bright red so the prompts stand out.
 void colour(){
 	HANDLE outputHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 	CONSOLE_SCREEN_BUFFER_INFOEX csbi;
@@ -22,13 +31,16 @@ void colour(){
 	SetConsoleScreenBufferInfoEx(outputHandle, &csbi);
 }
 
-//spell checking class which has a spell check function 
+// Suggests the closest dictionary word to a misspelled input. I score every
+// candidate of a similar length by three measures — leading run of matching
+// letters, count of in-place matches, and count of shared letters — and keep
+// the best one.
 class SpellCheck {
 private:
 	string str;		// String search from the the dic class for formatting
 	string temp;    // Stores Retrived word from the word list. 
-	int cSeq;		// Contineous sequence of letters
-	int pCseq;      // Previous Contineous Sequence of letters;
+	int cSeq;		// Continuous sequence of letters
+	int pCseq;      // Previous Continuous Sequence of letters;
 	int lMatch;     // Variable for Character Match.
 	int gMatch;     // Variable for greatest character match.
 	int seq;        // Variable for sequenced Character Match.
@@ -68,7 +80,7 @@ public:
 					else {
 						Wlength = word.length();
 					}
-					// Start of Contineous Sequence Match
+					// Start of Continuous Sequence Match
 					for (int i = 0; i < Wlength; i++) {
 						if (word[i] == temp[i]){
 							cSeq++;
@@ -82,7 +94,7 @@ public:
 							}
 						}
 					}
-					// End of Contineous Sequence Match
+					// End of Continuous Sequence Match
 
 					// Start of Sequence Match
 					for (int i = 0; i < Wlength; i++){
@@ -115,7 +127,8 @@ public:
 	}
 }; 
 
-//node class which has the properties and functions reagarding the node of the trie
+// A single node in the trie: it holds one character, a flag marking whether a
+// word ends here, and pointers to its child characters.
 class Node{
 private:
 	//mcontent is the character of a word which has a separate node of its own
@@ -157,7 +170,7 @@ public:
 			}
 		}
 
-		return NULL;
+		return nullptr;
 	}
 	//pushes a child in the children vector. Takes a object pointer as a parameter and push it in a a vector
 	void appendChild(Node* child){
@@ -169,7 +182,10 @@ public:
 	}
 };
 
-//This class basically creates, load, add words, and find words in a trie
+// The dictionary itself. I build a trie from the word list for fast lookups,
+// and while loading I also bucket the short words (<=4, <=6, <=8 letters) into
+// multimaps keyed by their sorted letters, which is what the anagram solver
+// needs.
 class Trie {
 private:
 	Node* root;                      //pointer object of class node
@@ -197,7 +213,7 @@ public:
 		{
 			//check if word exist
 			Node* child = current->findChild(word[i]);
-			if (child != NULL)
+			if (child != nullptr)
 			{
 				current = child;
 			}
@@ -217,7 +233,7 @@ public:
 	//returns true or false for if word exists or not. returns true or false depending on wether a word exists in the trie or not
 	bool searchWord(string word){
 		Node* current = root;
-		while (current != NULL)
+		while (current != nullptr)
 		{
 			//for loop for words length
 			for (int i = 0; i < word.length()  ; i++)
@@ -225,7 +241,7 @@ public:
 				//check if word exist
 				Node* tmp = current->findChild(word[i]);
 				//if world is already in there return false else move on
-				if (tmp == NULL){
+				if (tmp == nullptr){
 					return false;
 				}
 				current = tmp;
@@ -264,7 +280,7 @@ public:
 		string s2;      //stores s1 in alphabetical order
 		int count = 0;
 		int per=0;
-		file.open("Words.txt", file.in);      //opens file
+		file.open("data/words.txt", file.in);      //opens file
 		if (file.is_open()){                  //if file found and opened
 			while (!file.eof()){              //till file not end
 				getline(file, line);          // get a line from file and store in line
@@ -318,8 +334,9 @@ public:
 	}
 };
 
-//This class solves all the anagram consisting of 4,6 and 8 letters. This class also consists of a game in which user have to enter all possible
-//words that can be made with the given anagram
+// Everything anagram-related: solving 4/6/8-letter anagrams, auto-generating
+// and solving one, and a timed game where the player guesses as many words as
+// they can from a random set of letters (with a saved high-score table).
 class Anagram{
 private:	
 	int timer, y;         
@@ -401,7 +418,7 @@ public:
 		vector<int>i1;
 		int i = 0;
 		//open high scores files
-		ifstream in("High Scores.txt");
+		ifstream in("data/high_scores.txt");
 		if (!in) {
 			cout << "Could not open File!\n";
 		}
@@ -645,7 +662,7 @@ public:
 			}
 		}
 		ofstream out;
-		out.open("High Scores.txt");
+		out.open("data/high_scores.txt");
 		int tempc1 = 0;
 		cout << "\t\t\t\tNAME\tSCORE\tTIME\n\t\t\t\t\n";
 		while (tempc1 < 10 && tempc1<s1.size()) {     //printing all the high scores
@@ -1121,8 +1138,9 @@ public:
 	}
 };
 
-//main function contains the main interface and calls the function according to users option
-int main(){	
+// Loads the dictionary once, then runs the main menu loop: spell checker,
+// anagram solver & game, or exit.
+int main(){
 	string stop;
 	string word1;
 	string wordf;
@@ -1137,7 +1155,7 @@ int main(){
 	Sleep(500);
 	system("cls");
 	while (option != 3){
-		c = NULL;
+		c = '\0';
 		colour();
 		cout << "Hello :) \n\nWelcome To Our World Of Letters Where You Can Check Spellings Of Words That You Use Everyday In Your Life." << endl;
 		cout << "Here You Can Also Solve Any Anagram That Contains 4, 6 Or 8 Letters." << endl;
